@@ -1,0 +1,36 @@
+add_executable(
+        archiver
+        archiver.cpp
+        arguments_parser.cpp
+        priority_queue.cpp
+        command_handler.cpp
+        command_handler.h
+        bin_io.cpp
+        bin_io.h
+        encoder.cpp
+        encoder.h
+        trie.cpp
+        trie.h
+        decoder.cpp
+        decoder.h
+        constants.cpp
+        constants.h
+        utils.cpp
+        utils.h
+        canonical_codes.cpp
+        canonical_codes.h)
+
+add_catch(test_archiver_unit
+        test.cpp
+        trie.h
+        trie.cpp
+        canonical_codes.h
+        canonical_codes.cpp
+        bin_io.h
+        bin_io.cpp
+        priority_queue.h
+        priority_queue.cpp
+        constants.h
+        constants.cpp
+        utils.h
+        utils.cpp)
